@@ -1,0 +1,48 @@
+.animated {
+  .home__header-logo,
+  .clients,
+  .home__title,
+  .clients-arrows,
+  .careers-top img,
+  .careers-box,
+  .about-title,
+  .about-info,
+  .about-txt,
+  .row--news,
+  .contact,
+  .contact form,
+  .news-item__back,
+  .news-item__info h1,
+  .news-item__info p,
+  .news-item__top img,
+  .item__back,
+  .item__top h1,
+  .item__top p,
+  .careers-item {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+blockquote.animated,
+.post__item.animated,
+.item__bg.animated {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+
+.home__header-menu li,
+.home__header-title h1,
+.home__header-title p,
+.home__talk-to-us,
+.home__header-hero,
+.solution,
+.about-number,
+.leadership__people,
+.col-news {
+  &.animated-each {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
