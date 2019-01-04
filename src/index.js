@@ -4,4 +4,4 @@ require('./pages/main.ejs');
 require('./pages/jobs.ejs');
 require('./pages/news.ejs');
 require('./partials/links.ejs');
-require('./partials/footer.ejs');
+require('./data/stats.json');

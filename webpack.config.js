@@ -67,6 +67,10 @@ module.exports = {
         return _.template(partialTemplate)({ htmlWebpackPlugin: { options }});
       }
 
+      options.getData = file => {
+        return JSON.parse(fs.readFileSync(path.join(sourcePath, 'data', file)).toString());
+      }
+
       return new HtmlWebpackPlugin(options);
     }),
 
