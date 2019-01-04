@@ -112,12 +112,10 @@ function careers() {
 
 function fixedHeader() {
   if ($('.site-header--home').length > 0) {
-    let header = document.querySelector('.site-header--home'),
-        offsetElement = document.querySelector('#solutions'),
-        sticky = offsetElement.offsetTop - 100;
+    let header = document.querySelector('.site-header--home');
 
     function doFixed() {
-      if (window.pageYOffset > sticky) {
+      if (window.pageYOffset > window.innerHeight - 70) {
         header.classList.add('sticky');
       } else {
         header.classList.remove('sticky');

@@ -1,5 +1,5 @@
 .site-footer {
-  background-color: $c-black;  
+  background-color: $c-black;
 
   @include mq(xxs, md) {
     padding: 30px 0;
@@ -118,6 +118,7 @@
     svg {
       width: 22px;
       height: 17px;
+      margin-top: -4px;
       margin-right: 18px;
       fill: currentColor;
       @extend %transition-fill;

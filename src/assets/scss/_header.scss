@@ -90,7 +90,7 @@
     align-items: flex-start;
 
     @include mq(xxs, xl) {
-      margin-left: 14px;
+      margin-left: 20px;
 
       img {
         max-width: 192px;
@@ -119,27 +119,30 @@
     color: $c-orange;
     align-items: center;
     position: relative;
+    margin-right: 20px;
     z-index: 2;
-
-    @include mq(sm) {
-      display: flex;
-    }
-
-    @include mq(sm, xl) {
-      margin-right: 15px;
-    }
-
-    @include mq(xl) {
-      margin-right: 111px;
-    }
+    display: flex;
+    align-items: center;
 
     svg {
       width: 22px;
       height: 17px;
-      margin-right: 18px;
+      margin-top: -4px;
       fill: currentColor;
       @extend %transition-fill;
     }
+
+    .text {
+      display: none;
+    }
+
+    @include mq(sm) {
+      .text {
+        margin-left: 10px;
+        display: inline-block;
+      }
+    }
+
 
     &:hover {
       color: #FC7A10;
