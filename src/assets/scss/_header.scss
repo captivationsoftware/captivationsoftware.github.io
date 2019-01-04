@@ -172,6 +172,12 @@
       bottom: 0;
     }
 
+    &.scroll-spy {
+      #contact-link svg {
+        display: none;
+      }
+    }
+
     ul {
       position: relative;
       z-index: 2;
@@ -255,4 +261,6 @@
       transform: translate3d(0, 0, 0);
     }
   }
+
+
 }

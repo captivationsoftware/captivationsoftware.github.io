@@ -1,15 +1,15 @@
 <header class="site-header site-header--home">
   <div class="site-header__box">
-    <a href="#" class="site-header__open-menu">
+    <a href="<%= htmlWebpackPlugin.options.baseUrl %>#" class="site-header__open-menu">
       <span class="menu-icon-1"></span>
       <span class="menu-icon-2"></span>
       <span class="menu-icon-3"></span>
     </a>
-    <a href="/" class="site-header__logo">
+    <a href="<%= htmlWebpackPlugin.options.baseUrl %>" class="site-header__logo">
       <img src="assets/img/logo.png" alt="Captivation Software">
     </a>
   </div>
-  <a href="#contact" class="site-header__contact">
+  <a href="<%= htmlWebpackPlugin.options.baseUrl %>#contact" class="site-header__contact">
     <svg class="icon-email">
       <use xlink:href="#icon-email"></use>
     </svg>
@@ -18,15 +18,7 @@
     </span>
   </a>
   <nav class="site-header__nav scroll-spy">
-    <ul>
-      <li class="active"><a href="#solutions">Solutions</a></li>
-      <li><a href="#clients">Clients</a></li>
-      <li><a href="#careers">Careers</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#leadership">Leadership</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ul>
+    <%= htmlWebpackPlugin.options.getPartial('links.ejs') %>
   </nav>
 </header>
 <div class="home">
@@ -44,24 +36,7 @@
           <img src="assets/img/logo.png" alt="Site Logo">
         </a>
         <nav class="home__header-menu anchor-menu">
-          <ul>
-            <li class="active"><a href="#solutions">Solutions</a></li>
-            <li><a href="#clients">Clients</a></li>
-            <li><a href="#careers">Careers</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#leadership">Leadership</a></li>
-            <li><a href="#news">News</a></li>
-            <li>
-              <a href="#contact" id="contact-link">
-                <svg class="icon-email">
-                  <use xlink:href="#icon-email"></use>
-                </svg>
-                <span class="text">
-                  Contact Us
-                </span>
-              </a>
-            </li>
-          </ul>
+          <%= htmlWebpackPlugin.options.getPartial('links.ejs') %>
         </nav>
       </div>
       <div class="col-lg-8">
@@ -688,21 +663,8 @@
         <img src="assets/img/logo.png" alt="Logo">
       </a>
       <nav class="site-footer__nav anchor-menu">
-        <ul>
-          <li><a href="#solutions">Solutions</a></li>
-          <li><a href="#clients">Clients</a></li>
-          <li><a href="#careers">Careers</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#leadership">Leadership</a></li>
-          <li><a href="#news">News</a></li>
-        </ul>
+        <%= htmlWebpackPlugin.options.getPartial('links.ejs') %>
       </nav>
-      <a href="#contact" class="site-footer__contact">
-        <svg class="icon-email">
-          <use xlink:href="#icon-email"></use>
-        </svg>
-        Contact Us
-      </a>
     </div>
   </div>
 </footer>

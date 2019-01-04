@@ -470,6 +470,8 @@
   &__news {
     position: relative;
 
+    display: none;
+
     @include mq(xxs, md) {
       padding: 30px 0 27px;
     }

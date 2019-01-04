@@ -14,7 +14,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 </head>
 <body>
-  <%= htmlWebpackPlugin.options.contentGenerator() %>
+  <%= htmlWebpackPlugin.options.getContent(htmlWebpackPlugin.options.context.content) %>
   <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
   <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
   <% } %>

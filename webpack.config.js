@@ -9,7 +9,7 @@ const sourcePath = path.join(__dirname, 'src');
 const destinationPath = path.join(__dirname, 'dist');
 
 const siteContext = require('./site.context.js');
-const sitePaths = Object.keys(siteContext);
+const sitePaths = Object.keys(siteContext.pages);
 
 module.exports = {
 
@@ -47,17 +47,24 @@ module.exports = {
 
   plugins: [
     ..._.map(sitePaths, sitePath => {
-      const context = siteContext[sitePath];
+      const context = siteContext.pages[sitePath];
       const options = {
         filename: path.join(destinationPath, sitePath, 'index.html'),
         template: path.join(sourcePath, 'templates', 'index.ejs'),
         inject: false,
-        title: context.title
+        title: context.title,
+        baseUrl: siteContext.baseUrl,
+        context
       };
 
-      options.contentGenerator = () => {
-        const contentTemplate = fs.readFileSync(path.join(sourcePath, 'pages', context.content)).toString();
+      options.getContent = file => {
+        const contentTemplate = fs.readFileSync(path.join(sourcePath, 'pages', file)).toString();
         return _.template(contentTemplate)({ htmlWebpackPlugin: { options }});
+      }
+
+      options.getPartial = file => {
+        const partialTemplate = fs.readFileSync(path.join(sourcePath, 'partials', file)).toString();
+        return _.template(partialTemplate)({ htmlWebpackPlugin: { options }});
       }
 
       return new HtmlWebpackPlugin(options);

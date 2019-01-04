@@ -108,7 +108,7 @@
     }
   }
 
-  &__contact {
+  #contact-link {
     font-size: 18px;
     line-height: 1.38;
     color: $c-orange;
@@ -116,12 +116,7 @@
     align-items: center;
 
     svg {
-      width: 22px;
-      height: 17px;
-      margin-top: -4px;
-      margin-right: 18px;
-      fill: currentColor;
-      @extend %transition-fill;
+      display: none;
     }
 
     &:hover {
