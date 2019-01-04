@@ -248,8 +248,8 @@
     top: 0;
     width: 100vw;
     height: 100%;
-    opacity: 0;
-    transform: translate3d(0, 140px, 0);
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
     transition: transform .4s ease-out, opacity .2s ease-out;
 
     @include mq(xxs, md) {

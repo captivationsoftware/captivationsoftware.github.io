@@ -226,8 +226,9 @@ function menus() {
     e.preventDefault();
 
     let anchor = $(this).attr('href');
+    window.location.hash = anchor;
 
-    $('html,body').animate({scrollTop: $(anchor).offset().top - headerHeight}, 800);
+    $('html,body').animate({ scrollTop: $(anchor).offset().top - headerHeight}, 800);
   });
 
   if (window.location.href.indexOf('#') > -1) {
@@ -313,6 +314,7 @@ function animation() {
   });
 
   $('.home__header').waypoint(function() {
+
     $('.home__header-menu li').each(function(i) {
       setTimeout(() => {
         $(this).addClass('animated-each');
@@ -324,7 +326,6 @@ function animation() {
     }, 300);
     setTimeout(() => {
       $('.home__talk-to-us').addClass('animated-each');
-      $('.home__header-hero').addClass('animated-each');
     }, 400);
     this.destroy();
   }, {
@@ -399,7 +400,6 @@ function animation() {
   });
 }
 
-// init scripts
 svgIcons();
 sliders();
 careers();
@@ -408,3 +408,7 @@ popup();
 animatedLabel();
 menus();
 animation();
+
+setTimeout(() => {
+  document.body.className = '';
+}, 1000)

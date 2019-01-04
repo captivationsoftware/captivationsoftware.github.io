@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const sourcePath = path.join(__dirname, 'src');
 const destinationPath = path.join(__dirname, 'dist');
@@ -24,7 +25,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          { loader: "style-loader" },
+          { loader: MiniCssExtractPlugin.loader },
           { loader: "css-loader" },
           { loader: "sass-loader" }
         ]
@@ -65,7 +66,11 @@ module.exports = {
     new CopyWebpackPlugin([{
       from: path.join(sourcePath, 'assets'),
       to: path.join(destinationPath, 'assets')
-    }])
+    }]),
+
+    new MiniCssExtractPlugin({
+      filename: "bundle.css"
+    })
   ],
 
   devServer: {
