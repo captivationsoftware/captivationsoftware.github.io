@@ -1,4 +1,5 @@
 .site-footer {
+  position: relative;
   background-color: $c-black;
 
   @include mq(xxs, md) {
@@ -122,5 +123,15 @@
     &:hover {
       color: #FC7A10;
     }
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: lighten($c-black, 20);
   }
 }

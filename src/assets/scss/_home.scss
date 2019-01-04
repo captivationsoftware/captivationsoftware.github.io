@@ -418,6 +418,10 @@
     }
   }
 
+  .wrap {
+    margin: 40px 0;
+  }
+
   &__solutions {
     @include mq(xxs, sm) {
       padding: 40px 0 0;
@@ -1395,6 +1399,7 @@
     line-height: 1.37;
     font-weight: 700;
     display: block;
+    text-align: center;
 
     @include mq(xxs, sm) {
       font-size: 26px;
@@ -1529,9 +1534,13 @@
       font-size: 18px;
       font-weight: 300;
       line-height: 1.38;
-      margin: 0;
+      margin: 0 0 15px;
       position: relative;
       z-index: 2;
+
+      a {
+        color: $c-orange;
+      }
     }
   }
 
@@ -1573,6 +1582,7 @@
     a {
       display: flex;
       margin: 6px 0 0;
+      color: $c-orange;
     }
 
     .icon-linkedin {

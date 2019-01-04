@@ -49,6 +49,7 @@ module.exports = {
     ..._.map(sitePaths, sitePath => {
       const context = siteContext.pages[sitePath];
       const options = {
+        favicon: path.join(sourcePath, 'assets', 'favicon.ico'),
         filename: path.join(destinationPath, sitePath, 'index.html'),
         template: path.join(sourcePath, 'templates', 'index.ejs'),
         inject: false,
@@ -73,11 +74,16 @@ module.exports = {
 
       return new HtmlWebpackPlugin(options);
     }),
-
-    new CopyWebpackPlugin([{
-      from: path.join(sourcePath, 'assets'),
-      to: path.join(destinationPath, 'assets')
-    }]),
+    new CopyWebpackPlugin([
+      {
+        from: path.join(sourcePath, 'assets'),
+        to: path.join(destinationPath, 'assets')
+      },
+      {
+        from: path.join(sourcePath, 'assets', 'favicon.ico'),
+        to: path.join(destinationPath, 'favicon.ico')
+      }
+    ]),
 
     new MiniCssExtractPlugin({
       filename: "bundle.css"
