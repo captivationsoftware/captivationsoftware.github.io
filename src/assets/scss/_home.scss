@@ -405,7 +405,7 @@
   }
 
   .wrap {
-    margin: 80px 0 0;
+    margin: 40px 0;
   }
 
   &__solutions {
@@ -750,25 +750,21 @@
       border-left: 0;
     }
 
-    &:nth-child(5),
-    &:nth-child(6) {
+    &:nth-child(3),
+    &:nth-child(4) {
      border-bottom: 0;
     }
   }
 
   @include mq(sm) {
-    width: calc(100% / 3);
+    width: calc(100% / 2);
 
     &:first-child {
       border-left: 0;
     }
 
+    &:nth-child(3),
     &:nth-child(4) {
-     border: 0;
-    }
-
-    &:nth-child(5),
-    &:nth-child(6) {
      border-bottom: 0;
     }
   }
@@ -777,7 +773,7 @@
 .clients-controls {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   flex: 1;
 
   .home__title {
@@ -790,7 +786,7 @@
 
   @include mq(lg) {
     background-color: $c-white;
-    margin: -60px 0;
+    // margin: -60px 0;
     padding: 20px 40px;
   }
 }
@@ -803,8 +799,8 @@
 
   @include mq(xxs, lg) {
     position: absolute;
-    left: 15px;
-    right: 15px;
+    left: 30px;
+    right: 30px;
     bottom: 15px;
   }
 
@@ -1725,7 +1721,7 @@
   }
 
   @include mq(xxs, sm) {
-    margin: 0 -15px;
+    margin: 0;
     padding: 20px 15px;
 
     .btn {
