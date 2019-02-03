@@ -17,7 +17,7 @@
       Contact Us
     </span>
   </a>
-  <nav class="site-header__nav scroll-spy">
+  <nav class="site-header__nav scroll-spy anchor-menu">
     <%= htmlWebpackPlugin.options.getPartial('links.ejs') %>
   </nav>
 </header>
@@ -35,24 +35,26 @@
         <a href="/" class="home__header-logo">
           <img src="assets/img/logo.png" alt="Site Logo">
         </a>
-        <nav class="home__header-menu anchor-menu">
+        <nav class="home__header-menu anchor-menu" style="display: none;">
           <%= htmlWebpackPlugin.options.getPartial('links.ejs') %>
         </nav>
       </div>
+      <div class="home__talk-to-us" title="We Are Hiring!">
+        <a href="#careers">
+          WE ARE HIRING!
+          <span>
+            <svg class="icon-small-logo">
+              <use xlink:href="#icon-small-logo"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-lg-8">
         <div class="home__header-title">
-          <h1>Mission Software Engineering Services</h1>
+          <h1>Engineering digital solutions for mission makers.</h1>
           <p>Learn how <span>CAPTIVATION</span> innovates within the Armed Forces and Intelligence Community.</p>
-        </div>
-        <div class="home__talk-to-us" title="Contact Us">
-          <a href="#contact">
-            Contact Us
-            <span>
-              <svg class="icon-small-logo">
-                <use xlink:href="#icon-small-logo"></use>
-              </svg>
-            </span>
-          </a>
         </div>
       </div>
     </div>
@@ -83,9 +85,9 @@
         <div class="solutions__slide">
           <div class="solution">
             <div class="solution__img">
-              <img src="assets/img/s-6.svg" alt="Image">
+              <img src="assets/img/s-3.svg" alt="Image">
             </div>
-            <h3>DevOps</h3>
+            <h3>Machine<br>Learning /<br>Artificial<br>Intelligence</h3>
           </div>
         </div>
         <div class="solutions__slide">
@@ -94,8 +96,8 @@
               <img src="assets/img/s-4.svg" alt="Image">
             </div>
             <h3>Application<br>Development </h3>
-          </div>
         </div>
+          </div>
         <div class="solutions__slide">
           <div class="solution">
             <div class="solution__img">
@@ -107,9 +109,9 @@
         <div class="solutions__slide">
           <div class="solution">
             <div class="solution__img">
-              <img src="assets/img/s-3.svg" alt="Image">
+              <img src="assets/img/s-6.svg" alt="Image">
             </div>
-            <h3>Machine<br>Learning /<br>Artificial<br>Intelligence</h3>
+            <h3>DevOps</h3>
           </div>
         </div>
         <!-- <div class="solutions__slide">
@@ -140,96 +142,29 @@
       <div class="clients-row">
         <div class="clients">
           <div class="clients__slide">
-            <div class="clients__list">
-              <div class="client">
-                <img src="assets/img/c-1.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-2.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-3.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-4.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-5.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-6.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-            </div>
-          </div>
-          <div class="clients__slide">
-            <div class="clients__list">
-              <div class="client">
-                <img src="assets/img/c-1.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-2.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-3.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-4.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-5.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-6.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-            </div>
-          </div>
-          <div class="clients__slide">
-            <div class="clients__list">
-              <div class="client">
-                <img src="assets/img/c-1.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-2.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-3.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-4.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-5.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-              <div class="client">
-                <img src="assets/img/c-6.png" alt="United States Army">
-                <h3>United States Army</h3>
-              </div>
-            </div>
           </div>
         </div>
-        <div class="clients-controls">
+        <!-- <div class="clients-controls"> -->
+          <div class="clients__list">
+            <div class="client">
+              <img src="assets/img/logo-keyw.png" alt="KeyW">
+              <!-- <h3>KeyW</h3> -->
+            </div>
+            <div class="client">
+              <img src="assets/img/logo-eitc.png" alt="Enlighten IT Consulting">
+              <!-- <h3>Enlighten IT Consulting</h3> -->
+            </div>
+            <div class="client">
+              <img src="assets/img/logo-leidos.png" alt="Leidos">
+              <!-- <h3>Leidos</h3> -->
+            </div>
+          </div>
+
           <div class="home__title">
             <h3>CLIENTS</h3>
             <h2>Providing<br>Mission<br>Software<br>Engineering To…</h2>
           </div>
-          <div class="clients-arrows">
+          <!-- <div class="clients-arrows">
             <a href="#" id="clients-prev" class="clients-btn">
               <svg class="icon-arrow-left">
                 <use xlink:href="#icon-arrow-left"></use>
@@ -240,8 +175,8 @@
                 <use xlink:href="#icon-arrow-right"></use>
               </svg>
             </a>
-          </div>
-        </div>
+          </div> -->
+        <!-- </div> -->
       </div>
     </div>
   </div>
@@ -495,7 +430,7 @@
           <div class="about-title">
             <h3>About</h3>
             <h2>CAPTIVATION</h2>
-            <p>Was founded in 2015 to provide uncompromising software engineering support to missions that matter.</p>
+            <p>Founded in 2015 to provide uncompromising software engineering support to missions that matter.</p>
           </div>
         </div>
         <div class="col-md-7">
@@ -529,7 +464,7 @@
           <div class="col-xl-4">
             <div class="home__title">
               <h3>LEADERSHIP</h3>
-              <h2>Managed by Engineers, for Engineers...</h2>
+              <h2>A highly technical management team...</h2>
             </div>
           </div>
           <div class="col-xl-8">
@@ -542,8 +477,8 @@
                   <div class="leadership__people-name">
                     <h2>Dave Barbalato</h2>
                   </div>
-                  <h3>Founder / CEO</h3>
-                  <p>Dave Barbalato has over 15 years experience in the field of Software Development, and holds a B.S. Degree in Computer Science from SUNY Buffalo.</p>
+                  <h3>President / CEO</h3>
+                  <p>Dave Barbalato has over 15 years experience in the field of Software Engineering, and holds a B.S. Degree in Computer Science from SUNY Buffalo.</p>
                   <p>He is also an open-source contributor, having developed the popular library <a href="https://www.npmjs.com/package/react-sticky" target="_blank">react-sticky</a>.</p>
                 </div>
               </div>
@@ -555,7 +490,7 @@
                   <div class="leadership__people-name">
                     <h2>Daniel Barbalato</h2>
                   </div>
-                  <h3>CTO</h3>
+                  <h3>Vice President / CTO</h3>
                   <p>Daniel Barbalato has nearly 10 years of experience working as a subject matter expert within the field of Digital Signal Processing.</p>
                   <p>Daniel holds a B.S. Degree in Electrical Engineering from SUNY Buffalo.</p>
                 </div>
@@ -661,7 +596,7 @@
   </div>
   <span class="copyright">&copy; 2019 Captivation Software LLC
 </footer>
-<div class="popup">
+<!-- <div class="popup">
   <div class="popup__box">
     <div class="popup__bg"></div>
     <div class="popup__item">
@@ -720,6 +655,6 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 <img src="assets/img/symbol-sprite.svg" alt="" id="svg-inject-me">

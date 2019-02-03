@@ -7,7 +7,7 @@
   }
 
   @include mq(md) {
-    padding: 68px 0;
+    padding: 40px 0;
   }
 
   &__row {
@@ -127,11 +127,11 @@
 
   .copyright {
     position: absolute;
-    bottom: 15px;
+    bottom: 5px;
     left: 0;
     width: 100%;
     text-align: center;
     display: block;
-    color: lighten($c-black, 20);
+    color: lighten($c-black, 15);
   }
 }

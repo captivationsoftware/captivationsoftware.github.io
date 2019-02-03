@@ -1,10 +1,13 @@
 html {
   background: $c-white;
+  height: 100%;
 }
+
 
 body {
   font: $normal #{$font-size}/#{$line-height} $font-family;
   color: $c-text;
+  min-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   //-webkit-backface-visibility: hidden;
@@ -22,6 +25,7 @@ body {
   max-width: $wrap;
   padding-left: $padding-left;
   padding-right: $padding-right;
+  overflow-x: hidden;
 }
 
 #svg-inject-me {
@@ -142,7 +146,7 @@ body {
 }
 
 .col-6 {
- 
+
   flex: 0 0 50%;
   max-width: 50%;
 }

@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
   z-index: 100;
   background-image: linear-gradient(90deg, #020102 0%, #211D1B 26%, #2D2825 100%);
   display: flex;
@@ -15,7 +15,7 @@
   }
 
   @include mq(xl) {
-    height: 118px;
+    height: 90px;
   }
 
   &::before {
@@ -41,8 +41,8 @@
     }
 
     @include mq(xl) {
-      width: 110px;
-      height: 118px;
+      width: 98px;
+      height: 90px;
       padding-left: 33px;
     }
 

@@ -15,14 +15,14 @@ function sliders() {
     rows: 0,
     responsive: [
       {
-        breakpoint: 1280,
+        breakpoint: 1440,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 6,
           slidesToScroll: 1
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3
