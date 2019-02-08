@@ -857,6 +857,7 @@
 .careers-box {
   background-color: #FAF9F9;
   opacity: 0;
+  margin: 20px 0;
   transform: translate3d(0, 200px, 0);
   transition: transform .4s ease-out .5s, opacity .2s ease-out .5s;
 
@@ -870,18 +871,48 @@
     justify-content: space-between;
   }
 
-  @include mq(md, lg) {
-    padding: 75px 30px 100px 30px;
+}
+
+.careers-offers {
+  @include mq(xxs, md) {
+    padding: 30px;
   }
 
-  @include mq(lg) {
-    padding: 75px 90px 100px 50px;
+  @include mq(md) {
+    width: 50%;
+    padding-left: 100px;
+    padding-right: 20px;
+  }
+
+
+  ul {
+    @extend %reset-ul;
+  }
+
+  li {
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    padding: 16px 0;
+    border-bottom: 1px solid #D8D8D8;
+
+    &:last-child {
+      border: 0;
+    }
+
+    svg {
+      width: 17px;
+      height: 14px;
+      fill: $c-orange;
+      flex-shrink: 0;
+      margin: 3px 30px 0 0;
+    }
   }
 }
 
 .careers-list {
   @include mq(md) {
-    max-width: 520px;
+    width: 50%;
   }
 
   .careers__info {
@@ -902,6 +933,11 @@
 
 .careers {
   border-bottom: 1px solid rgba($c-black, .15);
+  padding: 0 20px;
+
+  &:last-child {
+    border-bottom: 0;
+  }
 
   &__open {
     display: flex;
@@ -916,51 +952,14 @@
     }
 
     @include mq(sm) {
-      padding: 10px 70px 10px 0;
+      // padding: 10px 70px 10px 0;
       height: 118px;
     }
 
-    &::before,
-    &::after {
-      position: absolute;
-      content: '';
-      transition: transform .2s ease-out, background-color .2s ease-out;
-    }
-
-    @include mq(xxs, md) {
-      &::before {
-        width: 20px;
-        height: 2px;
-        background-color: #999999;
-        right: 20px;
-        top: 50%;
-        transform: translate3d(0, -50%, 0);
-      }
-
-      &::after {
-        width: 2px;
-        height: 20px;
-        background-color: #999999;
-        right: 29px;
-        top: 50%;
-        transform: translate3d(0, -50%, 0);
-      }
-    }
-
-    @include mq(md) {
-      &::after {
-        width: 35px;
-        height: 1px;
-        top: 50%;
-        transform: translate3d(0, -50%, 0);
-        right: 35px;
-        background-color: $c-orange;
-      }
-    }
-
     h2 {
-      line-height: 1.38;
+      line-height: 1;
       flex: 1;
+      color: $c-orange;
       padding-right: 20px;
       @extend %transition-color;
       margin: 0;
@@ -972,13 +971,20 @@
       @include mq(sm) {
         font-size: 26px;
       }
+
+      small {
+        font-weight: normal;
+        color: $c-primary;
+        font-size: 1rem;
+      }
+
     }
 
     h3 {
       font-size: 16px;
       line-height: 1.2;
       font-weight: 300;
-      color: rgba($c-primary, .4);
+      color: $c-orange;
       flex-shrink: 0;
       margin: 0;
 
@@ -994,18 +1000,6 @@
         font-size: 18px;
         display: block;
         color: $c-primary;
-      }
-    }
-
-    &:hover {
-      @include mq(md) {
-        h2 {
-          color: $c-orange;
-        }
-
-        &::after {
-          height: 3px;
-        }
       }
     }
 
@@ -1054,34 +1048,6 @@
         &::after {
           height: 3px;
         }
-      }
-    }
-  }
-
-  &__offers {
-    width: 260px;
-
-    ul {
-      @extend %reset-ul;
-    }
-
-    li {
-      font-size: 16px;
-      line-height: 1.5;
-      display: flex;
-      padding: 16px 0;
-      border-bottom: 1px solid #D8D8D8;
-
-      &:last-child {
-        border: 0;
-      }
-
-      svg {
-        width: 17px;
-        height: 14px;
-        fill: $c-orange;
-        flex-shrink: 0;
-        margin: 3px 30px 0 0;
       }
     }
   }

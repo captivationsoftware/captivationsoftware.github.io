@@ -402,7 +402,7 @@ function animation() {
 
 svgIcons();
 sliders();
-careers();
+// careers();
 fixedHeader();
 popup();
 animatedLabel();

@@ -54,7 +54,7 @@
       <div class="col-lg-8">
         <div class="home__header-title">
           <h1>Engineering digital solutions for mission makers.</h1>
-          <p>Learn how <span>CAPTIVATION</span> innovates within the Armed Forces and Intelligence Community.</p>
+          <p>Learn how <span>CAPTIVATION</span><span style="color: black;">&reg;</span> innovates within the Armed Forces and Intelligence Community.</p>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@
                 <h3>United States Army</h3>
               </div>
               <div class="client">
-                <img src="assets/img/c-3.png" alt="United States Cyber Command">
+                <img src="assets/img/badge-cybercom.png" alt="United States Cyber Command">
                 <h3>US CYBERCOM</h3>
               </div>
               <div class="client">
@@ -182,235 +182,37 @@
       </div>
       <div class="careers-box">
         <div class="careers-list">
-          <div class="careers is-active">
-            <a href="#" class="careers__open active">
-              <h2>Design Lead Creative</h2>
-              <h3>
-                Location
-                <span>Louisiana</span>
-              </h3>
-            </a>
-            <div class="careers__info">
-              <div class="careers__desc">
-                <h2>Design Lead Creative</h2>
-                <p>Compensation plans engineered to be the best.</p>
-                <a href="#" class="apply-btn">Apply Now</a>
-              </div>
-              <div class="careers__offers">
-                <ul>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Rates from $50-110/hr
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    20% 401 k Contribution
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Flexible Schedules
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Medical/Dental Vision /Life insurances
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    HSA Contribution
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Paid Time Off
-                  </li>
-                </ul>
+          <% htmlWebpackPlugin.options.getData('jobs.json').forEach(function(job) { %>
+            <div class="careers">
+              <div class="careers__open">
+                <h2>
+                  <%= job.title %><br />
+                  <small>Levels: <%= job.levels %></small>
+                </h2>
+                <h3>
+                  Location
+                  <span><%= job.location %></span>
+                </h3>
               </div>
             </div>
-          </div>
-          <div class="careers">
-            <a href="#" class="careers__open">
-              <h2>Director</h2>
-              <h3>
-                Location
-                <span>Louisiana</span>
-              </h3>
-            </a>
-            <div class="careers__info">
-              <div class="careers__desc">
-                <h2>Director</h2>
-                <p>Compensation plans engineered to be the best.</p>
-                <a href="#" class="apply-btn">Apply Now</a>
-              </div>
-              <div class="careers__offers">
-                <ul>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Rates from $50-110/hr
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    20% 401 k Contribution
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Flexible Schedules
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Medical/Dental Vision /Life insurances
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    HSA Contribution
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Paid Time Off
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="careers">
-            <a href="#" class="careers__open">
-              <h2>Design Lead Creative</h2>
-              <h3>
-                Location
-                <span>Louisiana</span>
-              </h3>
-            </a>
-            <div class="careers__info">
-              <div class="careers__desc">
-                <h2>Design Lead Creative</h2>
-                <p>Compensation plans engineered to be the best.</p>
-                <a href="#" class="apply-btn">Apply Now</a>
-              </div>
-              <div class="careers__offers">
-                <ul>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Rates from $50-110/hr
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    20% 401 k Contribution
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Flexible Schedules
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Medical/Dental Vision /Life insurances
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    HSA Contribution
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Paid Time Off
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="careers">
-            <a href="#" class="careers__open">
-              <h2>Director</h2>
-              <h3>
-                Location
-                <span>Louisiana</span>
-              </h3>
-            </a>
-            <div class="careers__info">
-              <div class="careers__desc">
-                <h2>Director</h2>
-                <p>Compensation plans engineered to be the best.</p>
-                <a href="#" class="apply-btn">Apply Now</a>
-              </div>
-              <div class="careers__offers">
-                <ul>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Rates from $50-110/hr
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    20% 401 k Contribution
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Flexible Schedules
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Medical/Dental Vision /Life insurances
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    HSA Contribution
-                  </li>
-                  <li>
-                    <svg class="icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                    Paid Time Off
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <% }) %>
           <!-- <div class="careers-all">
             <a href="/jobs">See All jobs</a>
           </div> -->
         </div>
-        <div class="careers-view"></div>
+        <div class="careers-offers">
+          <h1>In addition to great pay and important mission work, all CAPTIVATION employees enjoy:</h1>
+          <ul>
+            <% htmlWebpackPlugin.options.getData('benefits.json').forEach(function(benefit) { %>
+              <li>
+                <svg class="icon-arrow-right">
+                  <use xlink:href="#icon-arrow-right"></use>
+                </svg>
+                <%= benefit %>
+              </li>
+            <% }) %>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
