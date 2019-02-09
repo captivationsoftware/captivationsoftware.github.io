@@ -709,7 +709,7 @@
 
     img {
       width: 100px;
-      height: 100px;
+      height: auto;
       display: block;
       margin: 0 auto 7px;
     }
@@ -862,11 +862,6 @@
   transform: translate3d(0, 200px, 0);
   transition: transform .4s ease-out .5s, opacity .2s ease-out .5s;
 
-  @include mq(xxs, md) {
-    margin: 0 -15px;
-    padding: 0 15px;
-  }
-
   @include mq(md) {
     display: flex;
     justify-content: space-between;
@@ -878,6 +873,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 1.8em;
+  }
 
   @include mq(xxs, md) {
     padding: 30px;
@@ -887,6 +887,7 @@
     width: 50%;
     padding-left: 100px;
     padding-right: 20px;
+    margin-top: 20px;
   }
 
 
@@ -940,7 +941,7 @@
 
 .careers {
   border-bottom: 1px solid rgba($c-black, .15);
-  padding: 0 20px;
+  padding: 0 10px;
   margin: 0 20px;
 
   &:last-child {
@@ -956,7 +957,7 @@
     z-index: 10;
 
     @include mq(xxs, sm) {
-      padding: 25px 35px 25px 0;
+      padding: 25px 0;
     }
 
     @include mq(sm) {
@@ -968,7 +969,6 @@
       line-height: 1;
       flex: 1;
       color: $c-orange;
-      padding-right: 20px;
       @extend %transition-color;
       margin: 0;
 
@@ -981,15 +981,16 @@
       }
 
       small {
+        display: none;
         font-weight: normal;
         color: $c-primary;
-        font-size: 1rem;
+        font-size: 0.75vw;
       }
 
     }
 
     h3 {
-      font-size: 16px;
+      font-size: 15px;
       line-height: 1.2;
       font-weight: 300;
       color: $c-orange;
@@ -1005,7 +1006,7 @@
       }
 
       span {
-        font-size: 18px;
+        font-size: 15px;
         display: block;
         color: $c-primary;
       }
@@ -1148,6 +1149,7 @@
     @extend %transition-bg;
     width: 100%;
     max-width: 350px;
+    margin-bottom: 30px;
 
     @include mq(xxs, sm) {
       margin: 20px 0 -50px;
