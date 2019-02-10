@@ -4,7 +4,7 @@
   "description": "Captivation Software website",
   "main": "app.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "PORT=3000 webpack-dev-server --mode development",
     "build": "rm -rf dist && NODE_ENV=production webpack --mode production"
   },
   "author": "Captivation Software LLC",

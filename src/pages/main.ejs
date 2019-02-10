@@ -194,9 +194,6 @@
               </div>
             </div>
           <% }) %>
-          <!-- <div class="careers-all">
-            <a href="/jobs">See All jobs</a>
-          </div> -->
         </div>
         <div class="careers-offers">
           <h1>In addition to great pay and important mission work, all CAPTIVATION employees enjoy:</h1>
@@ -346,30 +343,32 @@
         </div>
         <div class="col-md-7 col-lg-6">
           <div class="contact">
-            <form action="#">
+            <form action="https://liveformhq.com/form/d56e3591-56d1-46d8-9cc1-de8cda672405" method="POST" accept-charset="utf-8">
+              <input type="hidden" name="_utf8" value="✓" />
+              <input type="hidden" name="_redirect" value="<%= htmlWebpackPlugin.options.baseUrl %>#contact/thank-you" />
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input id="contact-full-name" type="text">
-                    <label for="contact-full-name">Full name</label>
+                    <input id="contact-full-name" type="text" name="Name">
+                    <label for="contact-full-name">Name</label>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input id="contact-email-address" type="text">
-                    <label for="contact-email-address">Email address</label>
+                    <input id="contact-email-address" type="text" name="email">
+                    <label for="contact-email-address">Email</label>
                   </div>
                 </div>
               </div>
               <div class="form-group">
-                <input id="contact-name" type="text">
-                <label for="contact-name">Company name</label>
+                <input id="contact-name" type="text" name="Company">
+                <label for="contact-name">Company</label>
               </div>
               <div class="form-group">
-                <textarea id="contact-message" data-gramm_editor="false"></textarea>
-                <label for="contact-message">Company name</label>
+                <textarea id="contact-message" data-gramm_editor="false" name="Message"></textarea>
+                <label for="contact-message">Message</label>
               </div>
-              <button class="btn">Submit now</button>
+              <button class="btn">Submit</button>
             </form>
           </div>
         </div>
@@ -410,26 +409,22 @@
           </div>
         </div>
         <div class="popup__col">
-          <form action="#">
+          <form action="https://forms.captivationsoftware.com/send" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="_to" value="<%= htmlWebpackPlugin.options.getData('contacts.json').jobs %>">
+            <input type="hidden" name="_redirect" value="<%= htmlWebpackPlugin.options.baseUrl %>#careers/thank-you" />
             <div class="form-group">
-              <input type="text" id="popup-name">
-              <label for="popup-name">Full name</label>
-            </div>
-            <div class="form-group form-group--select">
-              <select id="popup-status">
-                <option value="1">I am a US citizen/resident</option>
-              </select>
-              <label for="popup-status">Visa status</label>
+              <input type="text" id="popup-name" name="Name">
+              <label for="popup-name">Name</label>
             </div>
             <div class="form-group">
-              <input type="text" id="popup-email">
-              <label for="popup-email">Email address</label>
+              <input type="text" id="popup-email" name="Email">
+              <label for="popup-email">Email</label>
             </div>
             <div class="row">
               <div class="col-md-6">
                 <div class="upload-box">
-                  <a href="#" class="custom-upload">Upload resume</a>
-                  <input type="file" class="custom-file">
+                  <a href="#" class="custom-upload">Resume</a>
+                  <input type="file" class="custom-file" name="Resume">
                 </div>
               </div>
               <div class="col-md-6">

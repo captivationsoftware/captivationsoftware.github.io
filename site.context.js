@@ -1,4 +1,4 @@
-const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.captivationsoftware.com' : '/';
+const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.captivationsoftware.com' : `http://localhost:${process.env.PORT}`;
 
 module.exports = {
   baseUrl,
