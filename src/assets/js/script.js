@@ -400,14 +400,29 @@ function animation() {
   });
 }
 
+function forms() {
+  $('form').each(function(i, form) {
+    var $form = $(form);
+    $form.on('input', function() {
+      if ($form.find('input[type!="hidden"][name!="_nohack"],textarea,select').filter(function() { return this.value === ''; }).length === 0) {
+        $form.find('button').removeAttr('disabled');
+      } else {
+        $form.find('button').attr('disabled', true);
+      }
+    })
+  })
+}
+
 svgIcons();
 sliders();
 // careers();
+forms();
 fixedHeader();
 popup();
 animatedLabel();
 menus();
 animation();
+
 
 setTimeout(() => {
   document.body.className = '';
