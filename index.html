@@ -1,11 +1,41 @@
-<header class="site-header site-header--home">
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Captivation Software - Engineering digital solutions for mission makers.</title>
+  
+  <link rel="shortcut icon" href="favicon.ico">
+  
+  
+  <link href="bundle.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg-injector/1.1.3/svg-injector.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-83380235-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <header class="site-header site-header--home">
   <div title="Menu" class="site-header__box">
     <a href="#" class="site-header__open-menu">
       <span class="menu-icon-1"></span>
       <span class="menu-icon-2"></span>
       <span class="menu-icon-3"></span>
     </a>
-    <a href="<%= htmlWebpackPlugin.options.baseUrl %>" class="site-header__logo">
+    <a href="https://www.captivationsoftware.com" class="site-header__logo">
       <img src="assets/img/logo.png" alt="Captivation Software">
     </a>
   </div>
@@ -18,7 +48,25 @@
     </span>
   </a>
   <nav class="site-header__nav scroll-spy anchor-menu">
-    <%= htmlWebpackPlugin.options.getPartial('links.ejs') %>
+    <ul>
+  <li title="Solutions" class="active"><a href="#solutions">Solutions</a></li>
+  <li title="Clients"><a href="#clients">Clients</a></li>
+  <li title="Careers"><a href="#careers">Careers</a></li>
+  <li title="About"><a href="#about">About</a></li>
+  <li title="Leadership"><a href="#leadership">Leadership</a></li>
+  <!-- <li title="News"><a href="#news">News</a></li> -->
+  <li title="Contact Us">
+    <a href="#contact" id="contact-link">
+      <svg class="icon-email">
+        <use xlink:href="#icon-email"></use>
+      </svg>
+      <span class="text">
+        Contact Us
+      </span>
+    </a>
+  </li>
+</ul>
+
   </nav>
 </header>
 <div class="home">
@@ -36,7 +84,25 @@
           <img src="assets/img/logo.png" alt="Site Logo">
         </a>
         <nav class="home__header-menu anchor-menu" style="display: none;">
-          <%= htmlWebpackPlugin.options.getPartial('links.ejs') %>
+          <ul>
+  <li title="Solutions" class="active"><a href="#solutions">Solutions</a></li>
+  <li title="Clients"><a href="#clients">Clients</a></li>
+  <li title="Careers"><a href="#careers">Careers</a></li>
+  <li title="About"><a href="#about">About</a></li>
+  <li title="Leadership"><a href="#leadership">Leadership</a></li>
+  <!-- <li title="News"><a href="#news">News</a></li> -->
+  <li title="Contact Us">
+    <a href="#contact" id="contact-link">
+      <svg class="icon-email">
+        <use xlink:href="#icon-email"></use>
+      </svg>
+      <span class="text">
+        Contact Us
+      </span>
+    </a>
+  </li>
+</ul>
+
         </nav>
       </div>
       <div class="home__talk-to-us" title="We Are Hiring!">
@@ -181,31 +247,107 @@
       </div>
       <div class="careers-box">
         <div class="careers-list">
-          <% htmlWebpackPlugin.options.getData('jobs.json').forEach(function(job) { %>
+          
             <div class="careers">
               <div class="careers__open">
                 <h2>
-                  <%= job.title %><br />
-                  <small>Levels: <%= job.levels %></small>
+                  AI Software Engineer<br />
+                  <small>Levels: All</small>
                 </h2>
                 <h3>
-                  <span><%= job.location %></span>
+                  <span>Columbia, MD</span>
                 </h3>
               </div>
             </div>
-          <% }) %>
+          
+            <div class="careers">
+              <div class="careers__open">
+                <h2>
+                  Signals Software Engineer<br />
+                  <small>Levels: Senior</small>
+                </h2>
+                <h3>
+                  <span>Fort Meade, MD</span>
+                </h3>
+              </div>
+            </div>
+          
+            <div class="careers">
+              <div class="careers__open">
+                <h2>
+                  Java Software Engineer<br />
+                  <small>Levels: All</small>
+                </h2>
+                <h3>
+                  <span>South Laurel, MD</span>
+                </h3>
+              </div>
+            </div>
+          
+            <div class="careers">
+              <div class="careers__open">
+                <h2>
+                  Full-Stack Software Engineer<br />
+                  <small>Levels: Mid, Senior</small>
+                </h2>
+                <h3>
+                  <span>Fort Meade, MD</span>
+                </h3>
+              </div>
+            </div>
+          
+            <div class="careers">
+              <div class="careers__open">
+                <h2>
+                  Frontend Software Engineer<br />
+                  <small>Levels: All</small>
+                </h2>
+                <h3>
+                  <span>Annapolis Junction, MD</span>
+                </h3>
+              </div>
+            </div>
+          
         </div>
         <div class="careers-offers">
           <h1>In addition to great pay and important mission work, all CAPTIVATION employees enjoy:</h1>
           <ul>
-            <% htmlWebpackPlugin.options.getData('benefits.json').forEach(function(benefit) { %>
+            
               <li>
                 <svg class="icon-arrow-right">
                   <use xlink:href="#icon-arrow-right"></use>
                 </svg>
-                <%= benefit %>
+                20% 401k Contribution
               </li>
-            <% }) %>
+            
+              <li>
+                <svg class="icon-arrow-right">
+                  <use xlink:href="#icon-arrow-right"></use>
+                </svg>
+                $3,000 HSA Contribution
+              </li>
+            
+              <li>
+                <svg class="icon-arrow-right">
+                  <use xlink:href="#icon-arrow-right"></use>
+                </svg>
+                Paid Time Off
+              </li>
+            
+              <li>
+                <svg class="icon-arrow-right">
+                  <use xlink:href="#icon-arrow-right"></use>
+                </svg>
+                Medical/Dental/Vision Insurance
+              </li>
+            
+              <li>
+                <svg class="icon-arrow-right">
+                  <use xlink:href="#icon-arrow-right"></use>
+                </svg>
+                Life Insurance
+              </li>
+            
           </ul>
           <button class="btn apply-btn">
             Apply Now
@@ -229,15 +371,15 @@
             <div class="about-numbers">
               <div class="about-number">
                 <p>Employees</p>
-                <span><%= htmlWebpackPlugin.options.getData('stats.json').employeeCount %></span>
+                <span>8</span>
               </div>
               <div class="about-number">
                 <p>Contracts</p>
-                <span><%= htmlWebpackPlugin.options.getData('stats.json').contractCount %></span>
+                <span>7</span>
               </div>
               <div class="about-number">
                 <p>Agencies</p>
-                <span><%= htmlWebpackPlugin.options.getData('stats.json').agencyCount %></span>
+                <span>4</span>
               </div>
             </div>
             <div class="about-txt">
@@ -344,8 +486,8 @@
         <div class="col-md-7 col-lg-6">
           <div class="contact">
             <form action="https://postform.io/send" method="POST" accept-charset="utf-8" enctype="multipart/form-data">
-              <input type="hidden" name="_to" value="<%= htmlWebpackPlugin.options.getData('contacts.json').info %>" />
-              <input type="hidden" name="_redirect" value="<%= htmlWebpackPlugin.options.baseUrl %>#contact" />
+              <input type="hidden" name="_to" value="info@captivationsoftware.com" />
+              <input type="hidden" name="_redirect" value="https://www.captivationsoftware.com#contact" />
               <input type="hidden" name="_name" value="Contact Us Form Message (captivationsoftware.com)" />
               <input type="hidden" name="_reply_to_field" value="Email" />
               <div style="display: none;"><input type="text" name="_nohack" value="" /></div>
@@ -386,7 +528,25 @@
         <img src="assets/img/logo.png" alt="Logo">
       </a>
       <nav class="site-footer__nav anchor-menu">
-        <%= htmlWebpackPlugin.options.getPartial('links.ejs') %>
+        <ul>
+  <li title="Solutions" class="active"><a href="#solutions">Solutions</a></li>
+  <li title="Clients"><a href="#clients">Clients</a></li>
+  <li title="Careers"><a href="#careers">Careers</a></li>
+  <li title="About"><a href="#about">About</a></li>
+  <li title="Leadership"><a href="#leadership">Leadership</a></li>
+  <!-- <li title="News"><a href="#news">News</a></li> -->
+  <li title="Contact Us">
+    <a href="#contact" id="contact-link">
+      <svg class="icon-email">
+        <use xlink:href="#icon-email"></use>
+      </svg>
+      <span class="text">
+        Contact Us
+      </span>
+    </a>
+  </li>
+</ul>
+
       </nav>
     </div>
   </div>
@@ -413,8 +573,8 @@
         </div>
         <div class="popup__col">
           <form action="https://postform.io/send" method="POST" enctype="multipart/form-data">
-            <input type="hidden" name="_to" value="<%= htmlWebpackPlugin.options.getData('contacts.json').jobs %>" />
-            <input type="hidden" name="_redirect" value="<%= htmlWebpackPlugin.options.baseUrl %>#careers" />
+            <input type="hidden" name="_to" value="jobs@captivationsoftware.com" />
+            <input type="hidden" name="_redirect" value="https://www.captivationsoftware.com#careers" />
             <input type="hidden" name="_name" value="Job Application (captivationsoftware.com)" />
             <input type="hidden" name="_reply_to_field" value="Email" />
             <div style="display: none;"><input type="text" name="_nohack" value="" /></div>
@@ -429,9 +589,17 @@
             <div class="form-group form-group--select">
               <select id="popup-position" name="Position">
                 <option disabled selected value>Please Select...</option>
-                <% htmlWebpackPlugin.options.getData('jobs.json').forEach(function(job) { %>
-                  <option value="<%= job.title %>"><%= job.title %></option>
-                <% }) %>
+                
+                  <option value="AI Software Engineer">AI Software Engineer</option>
+                
+                  <option value="Signals Software Engineer">Signals Software Engineer</option>
+                
+                  <option value="Java Software Engineer">Java Software Engineer</option>
+                
+                  <option value="Full-Stack Software Engineer">Full-Stack Software Engineer</option>
+                
+                  <option value="Frontend Software Engineer">Frontend Software Engineer</option>
+                
               </select>
               <label for="popup-position">Position</label>
             </div>
@@ -462,3 +630,9 @@
   </div>
 </div>
 <img src="assets/img/symbol-sprite.svg" alt="" id="svg-inject-me">
+
+  
+  <script src="bundle.js"></script>
+  
+</body>
+</html>
