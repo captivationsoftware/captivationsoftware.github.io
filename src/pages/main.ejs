@@ -343,9 +343,12 @@
         </div>
         <div class="col-md-7 col-lg-6">
           <div class="contact">
-            <form action="https://liveformhq.com/form/d56e3591-56d1-46d8-9cc1-de8cda672405" method="POST" accept-charset="utf-8">
-              <input type="hidden" name="_utf8" value="✓" />
-              <input type="hidden" name="_redirect" value="<%= htmlWebpackPlugin.options.baseUrl %>#contact/thank-you" />
+            <form action="https://postform.io/send" method="POST" accept-charset="utf-8" enctype="multipart/form-data">
+              <input type="hidden" name="_to" value="<%= htmlWebpackPlugin.options.getData('contacts.json').info %>" />
+              <input type="hidden" name="_redirect" value="<%= htmlWebpackPlugin.options.baseUrl %>#contact" />
+              <input type="hidden" name="_name" value="Contact Us Form Message (captivationsoftware.com)" />
+              <input type="hidden" name="_reply_to_field" value="Email" />
+              <div style="display: none;"><input type="text" name="_nohack" value="" /></div>
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
@@ -355,7 +358,7 @@
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input id="contact-email-address" type="text" name="email">
+                    <input id="contact-email-address" type="text" name="Email">
                     <label for="contact-email-address">Email</label>
                   </div>
                 </div>
@@ -403,15 +406,18 @@
           <div class="popup__txt">
             <div class="popup__txt-top">
               <h3>Interested?</h3>
-              <h2>You know<br>what to do</h2>
+              <h2>You know<br>what to do.</h2>
             </div>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+            <p>Thank you for your interest in joining team CAPTIVATION!</p>
           </div>
         </div>
         <div class="popup__col">
-          <form action="https://forms.captivationsoftware.com/send" method="POST" enctype="multipart/form-data">
-            <input type="hidden" name="_to" value="<%= htmlWebpackPlugin.options.getData('contacts.json').jobs %>">
-            <input type="hidden" name="_redirect" value="<%= htmlWebpackPlugin.options.baseUrl %>#careers/thank-you" />
+          <form action="https://postform.io/send" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="_to" value="<%= htmlWebpackPlugin.options.getData('contacts.json').jobs %>" />
+            <input type="hidden" name="_redirect" value="<%= htmlWebpackPlugin.options.baseUrl %>#careers" />
+            <input type="hidden" name="_name" value="Job Application (captivationsoftware.com)" />
+            <input type="hidden" name="_reply_to_field" value="Email" />
+            <div style="display: none;"><input type="text" name="_nohack" value="" /></div>
             <div class="form-group">
               <input type="text" id="popup-name" name="Name">
               <label for="popup-name">Name</label>
@@ -419,6 +425,15 @@
             <div class="form-group">
               <input type="text" id="popup-email" name="Email">
               <label for="popup-email">Email</label>
+            </div>
+            <div class="form-group form-group--select">
+              <select id="popup-position" name="Position">
+                <option disabled selected value>Please Select...</option>
+                <% htmlWebpackPlugin.options.getData('jobs.json').forEach(function(job) { %>
+                  <option value="<%= job.title %>"><%= job.title %></option>
+                <% }) %>
+              </select>
+              <label for="popup-position">Position</label>
             </div>
             <div class="row">
               <div class="col-md-6">
@@ -430,7 +445,7 @@
               <div class="col-md-6">
                 <button class="btn-popup">
                   <em>
-                    <span class="btn-popup__title">Submit now</span>
+                    <span class="btn-popup__title">Submit</span>
                     <span class="btn-popup__icon">
                       <svg class="icon-small-logo-white">
                         <use xlink:href="#icon-small-logo-white"></use>

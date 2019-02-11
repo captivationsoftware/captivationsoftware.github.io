@@ -4,7 +4,7 @@ module.exports = {
   baseUrl,
   pages: {
     '/': {
-      title: 'Captivation Software',
+      title: 'Captivation Software - Engineering digital solutions for mission makers.',
       content: 'main.ejs'
     },
     '/jobs': {
