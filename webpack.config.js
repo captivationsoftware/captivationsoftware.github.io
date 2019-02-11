@@ -82,7 +82,15 @@ module.exports = {
       {
         from: path.join(sourcePath, 'assets', 'favicon.ico'),
         to: path.join(destinationPath, 'favicon.ico')
-      }
+      },
+      {
+        from: path.join(sourcePath, 'CNAME'),
+        to: path.join(destinationPath)
+      },
+      {
+        from: path.join(sourcePath, '.nojekyll'),
+        to: path.join(destinationPath)
+      },
     ]),
 
     new MiniCssExtractPlugin({
