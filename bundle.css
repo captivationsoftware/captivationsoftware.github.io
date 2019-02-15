@@ -1395,7 +1395,7 @@ select:-webkit-autofill:focus {
   height: 100px;
   border: 1px dashed rgba(255, 255, 255, 0.5);
   transition: .2s ease-out; }
-  .custom-upload:hover {
+  .custom-upload:hover, .custom-upload.has-file {
     background-color: #ffffff;
     color: #070908; }
 
@@ -3466,4 +3466,3 @@ blockquote.animated,
 .col-news.animated-each {
   opacity: 1;
   transform: translate3d(0, 0, 0); }
-
