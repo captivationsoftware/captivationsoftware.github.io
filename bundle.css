@@ -1438,6 +1438,11 @@ select:-webkit-autofill:focus {
     flex: 1;
     padding: 0 10px; }
 
+.btn-success {
+  background-color: green; }
+  .btn-success:hover {
+    background-color: green; }
+
 .site-header {
   position: fixed;
   top: 0;
@@ -3466,3 +3471,4 @@ blockquote.animated,
 .col-news.animated-each {
   opacity: 1;
   transform: translate3d(0, 0, 0); }
+

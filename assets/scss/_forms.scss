@@ -156,7 +156,7 @@ select:-webkit-autofill:focus {
   border: 1px dashed rgba($c-white, .5);
   transition: .2s ease-out;
 
-  &:hover {
+  &:hover, &.has-file {
     background-color: $c-white;
     color: $c-text;
   }
@@ -215,5 +215,13 @@ select:-webkit-autofill:focus {
   &__title {
     flex: 1;
     padding: 0 10px;
+  }
+}
+
+.btn-success {
+  background-color: green;
+
+  &:hover {
+    background-color: green;
   }
 }
