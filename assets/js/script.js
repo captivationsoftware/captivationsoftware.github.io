@@ -132,12 +132,7 @@ function popup() {
   $('.custom-upload').click(function(e) {
     e.preventDefault();
 
-    $('.custom-file')
-      .on('change', function(e) {
-        var filename = $(this).val().split(/(\\|\/)/g).pop();
-        $('.custom-upload').text(filename || 'RESUME').toggleClass('has-file', !!filename)
-      })
-      .trigger('click');
+    $('.custom-file').trigger('click');
   });
 
   function showPopup() {
@@ -181,7 +176,7 @@ function popup() {
 }
 
 function animatedLabel() {
-  const $el = $('.form-group input,.form-group textarea,.form-group select')
+  const $el = $('.form-group input,.form-group textarea,.form-group select');
 
   function checkVal() {
     $el.each(function(){
@@ -412,29 +407,10 @@ function forms() {
       if ($form.find('input[type!="hidden"][name!="_nohack"],textarea,select').filter(function() { return this.value === ''; }).length === 0) {
         $form.find('button').removeAttr('disabled');
       } else {
-        $form.find('button').attr('disabled', true)
+        $form.find('button').attr('disabled', true);
       }
     })
   })
-
-  $('input[name=Email]').each(function(i, input) {
-    $(input).on('change', function(e) {
-      if (!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test($(this).val()))
-        $(this).val('');
-    })
-  });
-
-  if (location.search.indexOf('thank-you') > -1) {
-    $(location.hash)
-      .find('form input')
-        .attr('disabled', true)
-        .end()
-      .find('button')
-        .addClass('btn-success')
-        .text('Message Sent')
-
-  }
-
 }
 
 svgIcons();

@@ -16,6 +16,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/svg-injector/1.1.3/svg-injector.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -72,8 +73,9 @@
   <div class="home__header animate">
     <div class="home__header-hero">
       <div class="video-box">
-        <video autoplay muted loop playsinline>
-          <source src="assets/img/video.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline poster="assets/img/video-bg.jpg">
+          <source src="assets/img/video.mp4" type="video/mp4" />
+          <img src="assets/img/video-bg.jpg" />
         </video>
       </div>
     </div>
@@ -370,7 +372,7 @@
             <div class="about-numbers">
               <div class="about-number">
                 <p>Employees</p>
-                <span>8</span>
+                <span>10</span>
               </div>
               <div class="about-number">
                 <p>Contracts</p>
@@ -486,17 +488,27 @@
           <div class="contact">
             <form action="https://postform.io/send" method="POST" accept-charset="utf-8" enctype="multipart/form-data">
               <input type="hidden" name="_to" value="info@captivationsoftware.com" />
-              <input type="hidden" name="_redirect" value="https://www.captivationsoftware.com?thank-you#contact" />
+              <input type="hidden" name="_redirect" value="https://www.captivationsoftware.com#contact" />
               <input type="hidden" name="_name" value="Contact Us Form Message" />
               <input type="hidden" name="_reply_to_field" value="Email" />
               <div style="display: none;"><input type="text" name="_nohack" value="" /></div>
-              <div class="form-group">
-                <input id="contact-full-name" type="text" name="Name">
-                <label for="contact-full-name">Name</label>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input id="contact-full-name" type="text" name="Name">
+                    <label for="contact-full-name">Name</label>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input id="contact-email-address" type="text" name="Email">
+                    <label for="contact-email-address">Email</label>
+                  </div>
+                </div>
               </div>
               <div class="form-group">
-                <input id="contact-email-address" type="text" name="Email">
-                <label for="contact-email-address">Email</label>
+                <input id="contact-name" type="text" name="Company">
+                <label for="contact-name">Company</label>
               </div>
               <div class="form-group">
                 <textarea id="contact-message" data-gramm_editor="false" name="Message"></textarea>
@@ -563,7 +575,7 @@
         <div class="popup__col">
           <form action="https://postform.io/send" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="_to" value="jobs@captivationsoftware.com" />
-            <input type="hidden" name="_redirect" value="https://www.captivationsoftware.com?thank-you#careers" />
+            <input type="hidden" name="_redirect" value="https://www.captivationsoftware.com#careers" />
             <input type="hidden" name="_name" value="Job Application" />
             <input type="hidden" name="_reply_to_field" value="Email" />
             <div style="display: none;"><input type="text" name="_nohack" value="" /></div>
