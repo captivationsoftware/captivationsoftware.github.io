@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.1798a90a.chunk.css",
-    "main.js": "/static/js/main.7ba3b292.chunk.js",
-    "main.js.map": "/static/js/main.7ba3b292.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a213b793.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a213b793.js.map",
-    "static/css/2.5c99fdbd.chunk.css": "/static/css/2.5c99fdbd.chunk.css",
-    "static/js/2.d0d5ef24.chunk.js": "/static/js/2.d0d5ef24.chunk.js",
-    "static/js/2.d0d5ef24.chunk.js.map": "/static/js/2.d0d5ef24.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.d07521bc02f2e13578c6633c085b9336.js": "/precache-manifest.d07521bc02f2e13578c6633c085b9336.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.5c99fdbd.chunk.css.map": "/static/css/2.5c99fdbd.chunk.css.map",
-    "static/css/main.1798a90a.chunk.css.map": "/static/css/main.1798a90a.chunk.css.map",
-    "static/js/2.d0d5ef24.chunk.js.LICENSE.txt": "/static/js/2.d0d5ef24.chunk.js.LICENSE.txt",
-    "static/media/all.css": "/static/media/fa-solid-900.ec763292.svg"
+    "main.css": "/compensation-explorer/static/css/main.1798a90a.chunk.css",
+    "main.js": "/compensation-explorer/static/js/main.b7c19853.chunk.js",
+    "main.js.map": "/compensation-explorer/static/js/main.b7c19853.chunk.js.map",
+    "runtime-main.js": "/compensation-explorer/static/js/runtime-main.0cdf19b6.js",
+    "runtime-main.js.map": "/compensation-explorer/static/js/runtime-main.0cdf19b6.js.map",
+    "static/css/2.f08075cd.chunk.css": "/compensation-explorer/static/css/2.f08075cd.chunk.css",
+    "static/js/2.d0d5ef24.chunk.js": "/compensation-explorer/static/js/2.d0d5ef24.chunk.js",
+    "static/js/2.d0d5ef24.chunk.js.map": "/compensation-explorer/static/js/2.d0d5ef24.chunk.js.map",
+    "index.html": "/compensation-explorer/index.html",
+    "precache-manifest.ce30ee068214e432bbc9a5f49c9fc298.js": "/compensation-explorer/precache-manifest.ce30ee068214e432bbc9a5f49c9fc298.js",
+    "service-worker.js": "/compensation-explorer/service-worker.js",
+    "static/css/2.f08075cd.chunk.css.map": "/compensation-explorer/static/css/2.f08075cd.chunk.css.map",
+    "static/css/main.1798a90a.chunk.css.map": "/compensation-explorer/static/css/main.1798a90a.chunk.css.map",
+    "static/js/2.d0d5ef24.chunk.js.LICENSE.txt": "/compensation-explorer/static/js/2.d0d5ef24.chunk.js.LICENSE.txt",
+    "static/media/all.css": "/compensation-explorer/static/media/fa-solid-900.ec763292.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a213b793.js",
-    "static/css/2.5c99fdbd.chunk.css",
+    "static/js/runtime-main.0cdf19b6.js",
+    "static/css/2.f08075cd.chunk.css",
     "static/js/2.d0d5ef24.chunk.js",
     "static/css/main.1798a90a.chunk.css",
-    "static/js/main.7ba3b292.chunk.js"
+    "static/js/main.b7c19853.chunk.js"
   ]
 }
