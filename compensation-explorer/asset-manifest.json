@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/compensation-explorer/static/css/main.bd93b458.chunk.css",
+    "main.css": "/compensation-explorer/static/css/main.94a9fc85.chunk.css",
     "main.js": "/compensation-explorer/static/js/main.da0a72eb.chunk.js",
     "main.js.map": "/compensation-explorer/static/js/main.da0a72eb.chunk.js.map",
     "runtime-main.js": "/compensation-explorer/static/js/runtime-main.0cdf19b6.js",
@@ -9,10 +9,10 @@
     "static/js/2.fb12fb49.chunk.js": "/compensation-explorer/static/js/2.fb12fb49.chunk.js",
     "static/js/2.fb12fb49.chunk.js.map": "/compensation-explorer/static/js/2.fb12fb49.chunk.js.map",
     "index.html": "/compensation-explorer/index.html",
-    "precache-manifest.35559e8631962d3d3b033cd72c210622.js": "/compensation-explorer/precache-manifest.35559e8631962d3d3b033cd72c210622.js",
+    "precache-manifest.0c284f5ab9a059ebb148698d5e763c8a.js": "/compensation-explorer/precache-manifest.0c284f5ab9a059ebb148698d5e763c8a.js",
     "service-worker.js": "/compensation-explorer/service-worker.js",
     "static/css/2.f08075cd.chunk.css.map": "/compensation-explorer/static/css/2.f08075cd.chunk.css.map",
-    "static/css/main.bd93b458.chunk.css.map": "/compensation-explorer/static/css/main.bd93b458.chunk.css.map",
+    "static/css/main.94a9fc85.chunk.css.map": "/compensation-explorer/static/css/main.94a9fc85.chunk.css.map",
     "static/js/2.fb12fb49.chunk.js.LICENSE.txt": "/compensation-explorer/static/js/2.fb12fb49.chunk.js.LICENSE.txt",
     "static/media/all.css": "/compensation-explorer/static/media/fa-solid-900.ec763292.svg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.0cdf19b6.js",
     "static/css/2.f08075cd.chunk.css",
     "static/js/2.fb12fb49.chunk.js",
-    "static/css/main.bd93b458.chunk.css",
+    "static/css/main.94a9fc85.chunk.css",
     "static/js/main.da0a72eb.chunk.js"
   ]
 }
