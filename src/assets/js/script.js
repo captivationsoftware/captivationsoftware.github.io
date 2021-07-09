@@ -427,3 +427,9 @@ animation();
 setTimeout(() => {
   document.body.className = '';
 }, 1000)
+
+setTimeout(() => {
+  document.querySelectorAll('input[name="_nonce"]').forEach((el) => {
+    el.value = Date.now();
+  })
+}, 10000);
